@@ -2391,3 +2391,38 @@ img {
         padding: 26px 22px;
     }
 }
+
+
+/* =========================================================
+   MOBILE FINAL FIX — annual schedule + CONTACT decoration
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* 年間スケジュール：イベント同士の間隔を少し詰める */
+    .annual-list {
+        gap: 6px;
+    }
+
+    /* CONTACT：スマホでも「RUSTLES」が途中で切れないようにする */
+    .contact-section::before {
+        content: "RUSTLES";
+        top: 70px;
+        right: 4px;
+        bottom: auto;
+        width: auto;
+        height: auto;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        color: rgba(215,25,32,.055);
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 72px;
+        font-weight: bold;
+        letter-spacing: .04em;
+        line-height: 1;
+        white-space: nowrap;
+        pointer-events: none;
+    }
+
+}
