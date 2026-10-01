@@ -2397,12 +2397,6 @@ img {
    MOBILE FINAL FIX — annual schedule + CONTACT decoration
 ========================================================= */
 
-@media (max-width: 700px) {
-
-    /* 年間スケジュール：イベント同士の間隔を少し詰める */
-    .annual-list {
-        gap: 6px;
-    }
 
     /* CONTACT：スマホでも「RUSTLES」が途中で切れないようにする */
     .contact-section::before {
@@ -2425,24 +2419,6 @@ img {
         pointer-events: none;
     }
 
-}
-@media (max-width: 768px) {
-    .annual-item-main {
-        min-height: 62px;
-        padding-top: 4px;
-        padding-bottom: 4px;
-    }
-
-    .annual-item:has(.annual-badge) .annual-item-main {
-        min-height: 68px;
-        padding-top: 6px;
-        padding-bottom: 6px;
-    }
-
-    .annual-badge {
-        margin-bottom: 2px;
-    }
-}
 /* =========================================================
    MOBILE — 年間スケジュールの隠し余白を完全に削除
 ========================================================= */
