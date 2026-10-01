@@ -2466,3 +2466,16 @@ img {
     }
 
 }
+@media (max-width: 700px) {
+    .annual-item-main {
+        min-height: 55px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .annual-item:has(.annual-badge) .annual-item-main {
+        min-height: 60px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+}
