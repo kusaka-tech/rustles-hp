@@ -2479,3 +2479,54 @@ img {
         padding-bottom: 3px;
     }
 }
+/* =========================================================
+   MOBILE — 年間スケジュールをコンパクトに
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .annual-item {
+        margin-bottom: 3px;
+        border-radius: 14px;
+        box-shadow: none;
+    }
+
+    .annual-item-main {
+        min-height: 55px;
+        padding: 4px 10px;
+        gap: 10px;
+    }
+
+    .annual-item:has(.annual-badge) .annual-item-main {
+        min-height: 60px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .annual-month {
+        min-width: 52px;
+        height: 38px;
+        font-size: 14px;
+        border-radius: 9px;
+    }
+
+    .annual-title {
+        font-size: 13px;
+    }
+
+    .annual-title-wrap {
+        gap: 2px;
+    }
+
+    .annual-badge {
+        padding: 2px 6px;
+        font-size: 8px;
+    }
+
+    .annual-arrow {
+        width: 28px;
+        height: 28px;
+        font-size: 15px;
+    }
+
+}
