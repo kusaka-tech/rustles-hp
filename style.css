@@ -2444,89 +2444,20 @@ img {
     }
 }
 /* =========================================================
-   MOBILE — 年間スケジュールの間隔調整
-========================================================= */
-
-@media (max-width: 768px) {
-
-    .annual-item-main {
-        min-height: 62px;
-        padding-top: 4px;
-        padding-bottom: 4px;
-    }
-
-    .annual-item:has(.annual-badge) .annual-item-main {
-        min-height: 68px;
-        padding-top: 6px;
-        padding-bottom: 6px;
-    }
-
-    .annual-badge {
-        margin-bottom: 2px;
-    }
-
-}
-@media (max-width: 700px) {
-    .annual-item-main {
-        min-height: 55px;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .annual-item:has(.annual-badge) .annual-item-main {
-        min-height: 60px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-    }
-}
-/* =========================================================
-   MOBILE — 年間スケジュールをコンパクトに
+   MOBILE — 年間スケジュールの隠し余白を完全に削除
 ========================================================= */
 
 @media (max-width: 700px) {
 
-    .annual-item {
-        margin-bottom: 3px;
-        border-radius: 14px;
-        box-shadow: none;
+    /* 閉じている詳細部分は高さごと消す */
+    .annual-item:not(.active) .annual-detail {
+        display: none;
     }
 
-    .annual-item-main {
-        min-height: 55px;
-        padding: 4px 10px;
-        gap: 10px;
-    }
-
-    .annual-item:has(.annual-badge) .annual-item-main {
-        min-height: 60px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-    }
-
-    .annual-month {
-        min-width: 52px;
-        height: 38px;
-        font-size: 14px;
-        border-radius: 9px;
-    }
-
-    .annual-title {
-        font-size: 13px;
-    }
-
-    .annual-title-wrap {
-        gap: 2px;
-    }
-
-    .annual-badge {
-        padding: 2px 6px;
-        font-size: 8px;
-    }
-
-    .annual-arrow {
-        width: 28px;
-        height: 28px;
-        font-size: 15px;
+    /* 開いたときだけ詳細を表示 */
+    .annual-item.active .annual-detail {
+        display: grid;
+        max-height: none;
     }
 
 }
