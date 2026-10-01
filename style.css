@@ -2443,3 +2443,26 @@ img {
         margin-bottom: 2px;
     }
 }
+/* =========================================================
+   MOBILE — 年間スケジュールの間隔調整
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .annual-item-main {
+        min-height: 62px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .annual-item:has(.annual-badge) .annual-item-main {
+        min-height: 68px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .annual-badge {
+        margin-bottom: 2px;
+    }
+
+}
